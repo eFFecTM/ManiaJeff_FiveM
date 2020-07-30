@@ -17,12 +17,43 @@ end
 
 
 
+function SecondItem(menu) 
+    local submenu = _menuPool:AddSubMenu(menu, "~b~Cars")
+    
+    
+    local carItem = NativeUI.CreateItem("Seven70")
+    local othermenu = _menuPool:AddSubMenu(submenu, "~r~Sport")
+    carItem.Activated = function(sender, item)
+        if item == carItem then
+            spawnCar("Seven70")
+            notify("770")
+        end
+   end
+   
+   othermenu:AddItem(carItem)
+
+    local carItem = NativeUI.CreateItem("Adder", "")
+    local othermenu = _menuPool:AddSubMenu(submenu, "~b~Supers")
+    carItem.Activated = function(sender, item)
+         if item == carItem then
+             spawnCar("adder")
+             notify("adder")
+         end
+    end
+    othermenu:AddItem(carItem)
+
+    local carItem = NativeUI.CreateItem("GT2RS", "")
+    local submenu = _menuPool:AddSubMenu(submenu, "vroom")
+    carItem.Activated = function(sender, item)
+        if item == carItem then
+            spawnCar("gt2rs")
+            notify("gt2rs")
+        end
+   end
+    submenu:AddItem(carItem)   
+end    
 
 
-
- 
-FirstItem(mainMenu)
-_menuPool:RefreshIndex()
 
 Citizen.CreateThread(function()
     while true do
@@ -36,6 +67,11 @@ Citizen.CreateThread(function()
 end)
 
 
+
+
+FirstItem(mainMenu)
+SecondItem(mainMenu)
+_menuPool:RefreshIndex()
 
 
 --[[ COPY BELOW ]]
