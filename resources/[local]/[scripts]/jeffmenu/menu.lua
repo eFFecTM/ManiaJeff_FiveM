@@ -13,7 +13,11 @@ end
 
 
 
-
+--_______________________________________________________________________________________--
+--_______________________________________________________________________________________--
+--_______________________________________________________________________________________--
+--_______________________________________________________________________________________--
+--_______________________________________________________________________________________--
 
 
 
@@ -21,7 +25,7 @@ function SecondItem(menu)
     local submenu = _menuPool:AddSubMenu(menu, "~b~Cars")
     
     
-    local carItem = NativeUI.CreateItem("Alpha")
+    local carItem = NativeUI.CreateItem("Alpha","")
     local othermenu = _menuPool:AddSubMenu(submenu, "~r~Sport", "")
     carItem.Activated = function(sender, item)
         if item == carItem then
@@ -33,7 +37,7 @@ function SecondItem(menu)
    othermenu:AddItem(carItem)
 
 
-   local carItem = NativeUI.CreateItem("Banshee")
+   local carItem = NativeUI.CreateItem("Banshee","")
    carItem.Activated = function(sender, item)
        if item == carItem then
            spawnCar("Banshee")
@@ -44,7 +48,7 @@ function SecondItem(menu)
   othermenu:AddItem(carItem)
 
 
-  local carItem = NativeUI.CreateItem("Banshee ?")
+  local carItem = NativeUI.CreateItem("Banshee ?","")
    carItem.Activated = function(sender, item)
        if item == carItem then
            spawnCar("Banshee2")
@@ -55,7 +59,7 @@ function SecondItem(menu)
   othermenu:AddItem(carItem)
 
 
-  local carItem = NativeUI.CreateItem("BestiaGTS")
+  local carItem = NativeUI.CreateItem("BestiaGTS","")
    carItem.Activated = function(sender, item)
        if item == carItem then
            spawnCar("BestiaGTS")
@@ -66,7 +70,7 @@ function SecondItem(menu)
   othermenu:AddItem(carItem)
 
 
-  local carItem = NativeUI.CreateItem("Carbonizzare")
+  local carItem = NativeUI.CreateItem("Carbonizzare", "")
   carItem.Activated = function(sender, item)
       if item == carItem then
           spawnCar("Carbonizzare")
@@ -77,7 +81,7 @@ function SecondItem(menu)
  othermenu:AddItem(carItem)
 
 
- local carItem = NativeUI.CreateItem("Comet")
+ local carItem = NativeUI.CreateItem("Comet","")
    carItem.Activated = function(sender, item)
        if item == carItem then
            spawnCar("Comet2")
@@ -88,7 +92,7 @@ function SecondItem(menu)
   othermenu:AddItem(carItem)
 
 
-  local carItem = NativeUI.CreateItem("Comet SR")
+  local carItem = NativeUI.CreateItem("Comet SR","")
    carItem.Activated = function(sender, item)
        if item == carItem then
            spawnCar("Comet3")
@@ -99,7 +103,7 @@ function SecondItem(menu)
   othermenu:AddItem(carItem)
 
 
-  local carItem = NativeUI.CreateItem("Coquette")
+  local carItem = NativeUI.CreateItem("Coquette","")
    carItem.Activated = function(sender, item)
        if item == carItem then
            spawnCar("Coquette")
@@ -110,7 +114,7 @@ function SecondItem(menu)
   othermenu:AddItem(carItem)
 
 
-  local carItem = NativeUI.CreateItem("Elegy Retro Custom")
+  local carItem = NativeUI.CreateItem("Elegy Retro Custom","")
    carItem.Activated = function(sender, item)
        if item == carItem then
            spawnCar("Elegy")
@@ -121,7 +125,7 @@ function SecondItem(menu)
   othermenu:AddItem(carItem)
 
 
-  local carItem = NativeUI.CreateItem("Elegy RH8")
+  local carItem = NativeUI.CreateItem("Elegy RH8","")
    carItem.Activated = function(sender, item)
        if item == carItem then
            spawnCar("Elegy2")
@@ -132,7 +136,7 @@ function SecondItem(menu)
   othermenu:AddItem(carItem)
 
 
-  local carItem = NativeUI.CreateItem("Feltzer")
+  local carItem = NativeUI.CreateItem("Feltzer","")
    carItem.Activated = function(sender, item)
        if item == carItem then
            spawnCar("Feltzer2")
@@ -143,7 +147,7 @@ function SecondItem(menu)
   othermenu:AddItem(carItem)
 
 
-  local carItem = NativeUI.CreateItem("Furore GT")
+  local carItem = NativeUI.CreateItem("Furore GT","")
    carItem.Activated = function(sender, item)
        if item == carItem then
            spawnCar("Furoregt")
@@ -154,7 +158,7 @@ function SecondItem(menu)
   othermenu:AddItem(carItem)
 
 
-  local carItem = NativeUI.CreateItem("Fusilade")
+  local carItem = NativeUI.CreateItem("Fusilade","")
    carItem.Activated = function(sender, item)
        if item == carItem then
            spawnCar("Fusilade")
@@ -165,7 +169,7 @@ function SecondItem(menu)
   othermenu:AddItem(carItem)
 
 
-  local carItem = NativeUI.CreateItem("Futo")
+  local carItem = NativeUI.CreateItem("Futo","")
    carItem.Activated = function(sender, item)
        if item == carItem then
            spawnCar("Futo")
@@ -176,7 +180,7 @@ function SecondItem(menu)
   othermenu:AddItem(carItem)
 
 
-  local carItem = NativeUI.CreateItem("Jester")
+  local carItem = NativeUI.CreateItem("Jester","")
    carItem.Activated = function(sender, item)
        if item == carItem then
            spawnCar("Jester")
@@ -187,7 +191,7 @@ function SecondItem(menu)
   othermenu:AddItem(carItem)
 
 
-  local carItem = NativeUI.CreateItem("Jester (Racecar)")
+  local carItem = NativeUI.CreateItem("Jester (Racecar)","")
    carItem.Activated = function(sender, item)
        if item == carItem then
            spawnCar("Jester2")
@@ -198,7 +202,7 @@ function SecondItem(menu)
   othermenu:AddItem(carItem)
 
 
-  local carItem = NativeUI.CreateItem("Khamelion")
+  local carItem = NativeUI.CreateItem("Khamelion","")
    carItem.Activated = function(sender, item)
        if item == carItem then
            spawnCar("Khamelion")
@@ -208,7 +212,7 @@ function SecondItem(menu)
   
   othermenu:AddItem(carItem)
 
-  local carItem = NativeUI.CreateItem("Kuruma")
+  local carItem = NativeUI.CreateItem("Kuruma","")
    carItem.Activated = function(sender, item)
        if item == carItem then
            spawnCar("Kuruma")
@@ -218,7 +222,7 @@ function SecondItem(menu)
   
   othermenu:AddItem(carItem)
 
-  local carItem = NativeUI.CreateItem("Lynx")
+  local carItem = NativeUI.CreateItem("Lynx","")
    carItem.Activated = function(sender, item)
        if item == carItem then
            spawnCar("Lynx")
@@ -228,7 +232,7 @@ function SecondItem(menu)
   
   othermenu:AddItem(carItem)
 
-  local carItem = NativeUI.CreateItem("Massacro")
+  local carItem = NativeUI.CreateItem("Massacro","")
    carItem.Activated = function(sender, item)
        if item == carItem then
            spawnCar("Massacro")
@@ -239,7 +243,7 @@ function SecondItem(menu)
   othermenu:AddItem(carItem)
 
 
-  local carItem = NativeUI.CreateItem("Massacro (Racecar)")
+  local carItem = NativeUI.CreateItem("Massacro (Racecar)","")
    carItem.Activated = function(sender, item)
        if item == carItem then
            spawnCar("Massacro2")
@@ -250,7 +254,7 @@ function SecondItem(menu)
   othermenu:AddItem(carItem)
 
 
-  local carItem = NativeUI.CreateItem("9f")
+  local carItem = NativeUI.CreateItem("9F","")
    carItem.Activated = function(sender, item)
        if item == carItem then
            spawnCar("Ninef")
@@ -261,7 +265,7 @@ function SecondItem(menu)
   othermenu:AddItem(carItem)
 
 
-  local carItem = NativeUI.CreateItem("Omnis")
+  local carItem = NativeUI.CreateItem("Omnis","")
    carItem.Activated = function(sender, item)
        if item == carItem then
            spawnCar("Omnis")
@@ -272,7 +276,7 @@ function SecondItem(menu)
   othermenu:AddItem(carItem)
 
 
-  local carItem = NativeUI.CreateItem("Penumbra")
+  local carItem = NativeUI.CreateItem("Penumbra","")
    carItem.Activated = function(sender, item)
        if item == carItem then
            spawnCar("Penumbra")
@@ -283,7 +287,7 @@ function SecondItem(menu)
   othermenu:AddItem(carItem)
 
 
-  local carItem = NativeUI.CreateItem("Rapid GT")
+  local carItem = NativeUI.CreateItem("Rapid GT","")
    carItem.Activated = function(sender, item)
        if item == carItem then
            spawnCar("RapidGT")
@@ -294,7 +298,7 @@ function SecondItem(menu)
   othermenu:AddItem(carItem)
 
 
-  local carItem = NativeUI.CreateItem("Raptor")
+  local carItem = NativeUI.CreateItem("Raptor","")
    carItem.Activated = function(sender, item)
        if item == carItem then
            spawnCar("Raptor")
@@ -305,7 +309,7 @@ function SecondItem(menu)
   othermenu:AddItem(carItem)
 
 
-  local carItem = NativeUI.CreateItem("Ruston")
+  local carItem = NativeUI.CreateItem("Ruston","")
    carItem.Activated = function(sender, item)
        if item == carItem then
            spawnCar("Ruston")
@@ -316,7 +320,7 @@ function SecondItem(menu)
   othermenu:AddItem(carItem)
 
 
-  local carItem = NativeUI.CreateItem("Schafter")
+  local carItem = NativeUI.CreateItem("Schafter","")
    carItem.Activated = function(sender, item)
        if item == carItem then
            spawnCar("Schafter2")
@@ -327,7 +331,7 @@ function SecondItem(menu)
   othermenu:AddItem(carItem)
 
 
-  local carItem = NativeUI.CreateItem("Schafter")
+  local carItem = NativeUI.CreateItem("Schafter","")
    carItem.Activated = function(sender, item)
        if item == carItem then
            spawnCar("Schafter3")
@@ -338,7 +342,7 @@ function SecondItem(menu)
   othermenu:AddItem(carItem)
 
 
-  local carItem = NativeUI.CreateItem("Schafter")
+  local carItem = NativeUI.CreateItem("Schafter","")
    carItem.Activated = function(sender, item)
        if item == carItem then
            spawnCar("Schafter4")
@@ -349,7 +353,7 @@ function SecondItem(menu)
   othermenu:AddItem(carItem)
 
 
-  local carItem = NativeUI.CreateItem("Schwarzer")
+  local carItem = NativeUI.CreateItem("Schwarzer","")
    carItem.Activated = function(sender, item)
        if item == carItem then
            spawnCar("Schwarzer")
@@ -360,7 +364,7 @@ function SecondItem(menu)
   othermenu:AddItem(carItem)
 
 
-  local carItem = NativeUI.CreateItem("Seven70")
+  local carItem = NativeUI.CreateItem("Seven70","")
    carItem.Activated = function(sender, item)
        if item == carItem then
            spawnCar("Seven70")
@@ -371,7 +375,7 @@ function SecondItem(menu)
   othermenu:AddItem(carItem)
 
 
-  local carItem = NativeUI.CreateItem("Specter")
+  local carItem = NativeUI.CreateItem("Specter","")
    carItem.Activated = function(sender, item)
        if item == carItem then
            spawnCar("Specter")
@@ -382,7 +386,7 @@ function SecondItem(menu)
   othermenu:AddItem(carItem)
 
 
-  local carItem = NativeUI.CreateItem("Specter Custom")
+  local carItem = NativeUI.CreateItem("Specter Custom","")
    carItem.Activated = function(sender, item)
        if item == carItem then
            spawnCar("Specter2")
@@ -393,7 +397,7 @@ function SecondItem(menu)
   othermenu:AddItem(carItem)
 
 
-  local carItem = NativeUI.CreateItem("Sultan")
+  local carItem = NativeUI.CreateItem("Sultan","")
    carItem.Activated = function(sender, item)
        if item == carItem then
            spawnCar("Sultan")
@@ -404,7 +408,7 @@ function SecondItem(menu)
   othermenu:AddItem(carItem)
 
 
-  local carItem = NativeUI.CreateItem("Surano")
+  local carItem = NativeUI.CreateItem("Surano","")
    carItem.Activated = function(sender, item)
        if item == carItem then
            spawnCar("Surano")
@@ -415,7 +419,7 @@ function SecondItem(menu)
   othermenu:AddItem(carItem)
 
 
-  local carItem = NativeUI.CreateItem("Tampa")
+  local carItem = NativeUI.CreateItem("Tampa","")
    carItem.Activated = function(sender, item)
        if item == carItem then
            spawnCar("Tampa2")
@@ -426,7 +430,7 @@ function SecondItem(menu)
   othermenu:AddItem(carItem)
 
 
-  local carItem = NativeUI.CreateItem("Tropos")
+  local carItem = NativeUI.CreateItem("Tropos","")
    carItem.Activated = function(sender, item)
        if item == carItem then
            spawnCar("Tropos")
@@ -437,7 +441,7 @@ function SecondItem(menu)
   othermenu:AddItem(carItem)
 
 
-  local carItem = NativeUI.CreateItem("Verlierer")
+  local carItem = NativeUI.CreateItem("Verlierer","")
    carItem.Activated = function(sender, item)
        if item == carItem then
            spawnCar("Verlierer2")
@@ -449,9 +453,14 @@ function SecondItem(menu)
 
 
 --_______________________________________________________________________________________--
+--_______________________________________________________________________________________--
+--_______________________________________________________________________________________--
+--_______________________________________________________________________________________--
+--_______________________________________________________________________________________--
+
 
     local carItem = NativeUI.CreateItem("Adder", "")
-    local othermenu = _menuPool:AddSubMenu(submenu, "~b~Supers")
+    local othermenu = _menuPool:AddSubMenu(submenu, "~b~Supers","")
     carItem.Activated = function(sender, item)
          if item == carItem then
              spawnCar("adder")
@@ -740,18 +749,15 @@ function SecondItem(menu)
     end
     othermenu:AddItem(carItem)
 
-    --___________________________________________________________________________________________--
 
-    local carItem = NativeUI.CreateItem("Porsche GT2 RS", "")
-    local submenu = _menuPool:AddSubMenu(submenu, "vroom")
-    carItem.Activated = function(sender, item)
-        if item == carItem then
-            spawnCar("gt2rs")
-            notify("Porsche GT2 RS")
-        end
-   end
-    submenu:AddItem(carItem)
+    --_________________________________________________________________________--
+    --_________________________________________________________________________--
+    --_________________________________________________________________________--
+    --_________________________________________________________________________--
+    --_________________________________________________________________________--
+
     
+    local submenu = _menuPool:AddSubMenu(submenu, "vroom")   
     local carItem = NativeUI.CreateItem("Aston Martin One-77", "")
     carItem.Activated = function(sender, item)
         if item == carItem then
@@ -1121,6 +1127,15 @@ function SecondItem(menu)
    end
     submenu:AddItem(carItem)
 
+    local carItem = NativeUI.CreateItem("Porsche 911 GT2 RS", "")
+    carItem.Activated = function(sender, item)
+        if item == carItem then
+            spawnCar("gt2rs")
+            notify("Porsche 911 GT2 RS")
+        end
+   end
+    submenu:AddItem(carItem)
+
 
     local carItem = NativeUI.CreateItem("Audi R8", "")
     carItem.Activated = function(sender, item)
@@ -1205,11 +1220,34 @@ Citizen.CreateThread(function()
     end
 end)
 
+--_________________________________________________________________________--
+--_________________________________________________________________________--
+--_________________________________________________________________________--
+--_________________________________________________________________________--
+--_________________________________________________________________________--
+
+
+
+
+function ThirdItem(menu) 
+    local submenu = _menuPool:AddSubMenu(menu, "~b~Vehicle Customize ?")
+end
+
+
+
+
+
+
+
+
+
+
 
 
 
 FirstItem(mainMenu)
 SecondItem(mainMenu)
+ThirdItem(mainMenu)
 _menuPool:RefreshIndex()
 
 
@@ -1243,6 +1281,7 @@ function spawnCar(car)
 
     local x, y, z = table.unpack(GetEntityCoords(PlayerPedId(), false))
     local vehicle = CreateVehicle(car, x + 2, y + 2, z + 1, GetEntityHeading(PlayerPedId()), true, false)
+    
     SetPedIntoVehicle(PlayerPedId(), vehicle, -1)
     
     SetEntityAsNoLongerNeeded(vehicle)
@@ -1251,6 +1290,22 @@ function spawnCar(car)
     --[[ SetEntityAsMissionEntity(vehicle, true, true) ]]
 end
 
+
+--// If the previous vehicle exists...
+--           if (_previousVehicle != null)
+--            {
+--                // And it's actually a vehicle (rather than another random entity type)
+--                if (_previousVehicle.Exists() && _previousVehicle.PreviouslyOwnedByPlayer &&
+--                    (_previousVehicle.Occupants.Count() == 0 || _previousVehicle.Driver.Handle == Game.PlayerPed.Handle))
+--                {
+--                    // If the previous vehicle should be deleted:
+--                    if (replacePrevious || !IsAllowed(Permission.VSDisableReplacePrevious))
+--                    {
+--                        // Delete it.
+--                        _previousVehicle.PreviouslyOwnedByPlayer = false;
+--                        SetEntityAsMissionEntity(_previousVehicle.Handle, true, true);
+--                        _previousVehicle.Delete();
+--                    }
 
 
 
@@ -1272,3 +1327,22 @@ end
 --5(lobby)freeze/car customize/spawn location--
 --6(lobby)grid--
 --7(grid)start race--
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
